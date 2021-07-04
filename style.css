@@ -7,22 +7,26 @@ body {
 h1 {
   font-size: 50px;
 }
+h2 {
+  font-size: 40px;
+}
 .orange-color {
     color: orange;
 }
-section {
+.flexible-container {
     display: flex;
+    margin-bottom: 150px;
 }
 .half-width {
     width: 50%;
-    padding: 5%;
+    padding: 0 5%;
 }
 .half-width img {
-    width: 80%;
+    width: 100%;
 }
 .link-button {
     text-decoration: none;
-    background-image: linear-gradient(orange, tomato);
+    background-image: linear-gradient(to right,orange, tomato);
     color: white;
     font-weight: 700;
     padding: 10px 40px;
@@ -35,6 +39,31 @@ section {
 .second-banner {
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
-    background-position: right;
-    
+    background-position: right bottom 120px;
+}
+.experience-area{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom 50px;
+}
+.card {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+}
+.card1 {
+    border-left: 7px solid;
+    border-image: linear-gradient(red, tomato);
+    border-image-slice: 1;
+}
+.card2 {
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+footer p {
+    text-align: center;
 }
